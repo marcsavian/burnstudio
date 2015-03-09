@@ -298,3 +298,61 @@ a.prev:hover {
 /*-----------------------------------------------------
 END SLIDES
 ------------------------------------------------------*/
+
+
+/*------------------------------------------------------
+SERVICE
+----------------------------------------------------*/
+
+#service {
+    margin: 40px auto;
+    height: 253px;
+    padding-top: 30px;
+    background: url(../media/images/service-bg.png) no-repeat;
+}
+
+#web {
+    float: left;
+    width: 450px;
+    padding-left: 30px;
+}
+
+#web img {
+    float: right;
+    margin-right: 50px;
+}
+#web p {
+    width: 260px;
+    margin-bottom: 20px;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#vector {
+    float: right;
+    width: 450px;
+    padding-left: 30px;
+}
+
+#vector img {
+    float: right;
+    margin-right: 50px;
+}
+
+#vector p {
+    width: 260px;
+    margin-bottom: 20px;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+/*----------------------------------
+SERVICE END
+-------------------------------------*/
+
