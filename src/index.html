@@ -34,6 +34,10 @@
     <link rel="stylesheet" media="print" href="assets/styles/print.css" />
     <link rel="stylesheet" href="assets/styles/style.css"/>
 
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="../assets/scripts/slides.min.jquery.js"></script>
+
 </head>
 <body>
     <!-- CONTENT -->
@@ -51,7 +55,7 @@
                     <li><a href="#" title="">About Us</a></li>
                     <li><a href="#" title="">Testimonials</a></li>
                     <li><a href="#" title="">Contact Us</a></li>
-                    <li class=last">
+                    <li class="last">
                         <div>
                             <input type="text" name="search" placeholder="search" />
                             <input type="submit" name="search" value="go" class="search" />
@@ -63,7 +67,32 @@
     </div><!-- end header wrap -->
     <div id="container">
         <div id="slides">
-            slides content goes here
+            <div class="slides_container">
+                <div>
+                    <img src="../assets/media/images/slide1.png" alt="slide1" />
+                    <div class="slide-right">
+                        <h1 class="slide-heading">Artthatworks 1 dolor sit amet, consectetur adipiscing elit.</h1>
+                        <p class="info">Vestibulum a diam lorem. Fusce viverra commodo rhoncus. Nam ipsum magna, faucibus non semper et, vestibulum quis arcu. Nulla in tellus eu nunc cursus scelerisque ac nec nibh.</p>
+                        <p><a href="#" class="readmore">read more</a></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../assets/media/images/slide1.png" alt="slide2" />
+                    <div class="slide-right">
+                        <h1 class="slide-heading">Artthatworks 1 dolor sit amet, consectetur adipiscing elit.</h1>
+                            <p class="info">Vestibulum a diam lorem. Fusce viverra commodo rhoncus. Nam ipsum magna, faucibus non semper et, vestibulum quis arcu. Nulla in tellus eu nunc cursus scelerisque ac nec nibh.</p>
+                            <p><a href="#" class="readmore">read more</a></p>
+                    </div>
+               </div>               
+                <div>
+                    <img src="../assets/media/images/slide1.png" alt="slide3" />
+                    <div class="slide-right">
+                        <h1 class="slide-heading">Artthatworks 3 dolor sit amet, consectetur adipiscing elit.</h1>
+                        <p class="info">Vestibulum a diam lorem. Fusce viverra commodo rhoncus. Nam ipsum magna, faucibus non semper et, vestibulum quis arcu. Nulla in tellus eu nunc cursus scelerisque ac nec nibh.</p>
+                        <p><a href="#" class="readmore">read more</a></p>
+                    </div>
+                </div>
+            </div><!-- end slides_container -->
         </div><!-- end slides -->
         <div id="service">
             service content goes here
@@ -86,5 +115,13 @@
         footer content goes here
     </footer>
     <!-- JAVASCRIPT -->
+    <script>
+        $(function(){
+            $('#slides').slides({
+                preload: true,
+                generateNextPrev: true
+            });
+        });
+    </script>
 </body>
 </html>

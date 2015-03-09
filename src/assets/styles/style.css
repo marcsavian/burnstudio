@@ -182,4 +182,119 @@ nav ul li div input[type=submit]{
     width: 16px;
 }
 
+
 /* END HEADER */
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------
+SLIDES
+-------------------------------------------------*/
+#slides {
+    position: relative;
+    margin-top: 40px;
+
+}
+
+.slides_container {
+    height: 315px;
+}
+
+.slide-right {
+    position: absolute;
+    top: 0;
+    left: 385px;
+}
+
+.slide-heading {
+    background: url(../media/images/slide-heading2.png) no-repeat;
+    width: 494px;
+    height: 68px;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-left: 80px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.slide-right .info {
+    width: 395px;
+    margin-bottom: 20px;
+    margin-left: 155px;
+}
+.slide-right .readmore {
+    margin-left: 155px;
+}
+
+.readmore {
+    font-style: italic;
+    text-decoration: none;
+    color: #509743;
+    padding-left: 15px;
+    background: url(../media/images/more.png) no-repeat 0 50%;
+}
+
+.readmore:hover {
+    color: #c8c8c8;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 99;
+}
+
+ul.pagination li {
+    float: left;
+    margin-right: 10px;
+    background: url(../media/images/pagination.png) no-repeat top;
+    width: 14px;
+    height: 15px;
+
+}
+
+ul.pagination li.current {
+    background-position: bottom;
+}
+
+ul.pagination li a {
+    display: block;
+    text-indent: -9999999px;
+}
+
+a.next {
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    display: block;
+    width: 7px;
+    height: 13px;
+    background: transparent url(../media/images/prev-next.png) no-repeat top right;
+    text-indent: -999999px;
+}
+
+a.prev {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    display: block;
+    width: 7px;
+    height: 13px;
+    background: transparent url(../media/images/prev-next.png) no-repeat top left;
+    text-indent: -999999px;
+}
+
+a.next:hover {
+    background-position: bottom right;
+}
+a.prev:hover {
+    background-position: bottom left;
+}
+/*-----------------------------------------------------
+END SLIDES
+------------------------------------------------------*/
