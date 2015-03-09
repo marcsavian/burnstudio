@@ -6,26 +6,37 @@ module.exports = function(grunt) {
         //Read the package.json (optional)
         pkg: grunt.file.readJSON('package.json'),
 
-        // Metadata.
-        meta: {
-            basePath: '../',
-            srcPath: '../src/',
-            deployPath: '../deploy/'
-        },
-
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
         '* Copyright (c) <%= grunt.template.today("yyyy") %> ',
 
-        watch: {
-            scripts: {
-                files: ['scripts/scripts.js'],
-                tasks: ['uglify'],
+
+        /**
+         * Creates a node.js Express Server to test our code in a server like environment.
+         * Note: We are using the watch task to keep the server running.
+         */
+        express: {
+            src: {
                 options: {
-                    livereload: true,
-                    spawn: false
+                    port: 8000,
+                    hostname: "0.0.0.0",
+                    bases: ['src/'],
+                    livereload: true
                 }
-            },
+            }
+        },
+
+        /**
+         * Opens the index.html file in the default browser after the node.js Express Server is running.
+         */
+        open: {
+            src: {
+                // Gets the port from the connect configuration
+                path: 'http://localhost:<%= express.src.options.port%>'
+            }
+        },
+
+        watch: {
             src: {
                 files: ['*.html', '*.css'],
                 options: {
@@ -37,8 +48,10 @@ module.exports = function(grunt) {
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-express');
+    grunt.loadNpmTasks('grunt-open');
 
     // Default task
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['express', 'open', 'watch']);
 
 };
