@@ -548,3 +548,68 @@ CLIENT
 #client-wrap {
     padding: 40px 0;
 }
+/*------------------------------------------------
+END CLIENT
+-------------------------------------------------*/
+/*------------------------------------------------
+FOOTER
+-------------------------------------------------*/
+footer {
+    clear: both;
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px 0 60px 0;
+    position: relative;
+}
+#footer-left {
+    float: left;
+    width: 50%;
+}
+
+#footer-left p {
+    font-size: 12px;
+    color: #666666;
+}
+
+#footer-left a:hover {
+    color: #c8c8c8;
+}
+
+#footer-right {
+    float: right;
+    width: 50%;
+}
+
+#footer-right ul {
+    float: right;
+}
+
+#footer-right ul li {
+    float: left;
+    margin-right: 30px;
+}
+
+#footer-right ul li:last-child {
+    margin-right: 0;
+}
+
+#footer-right ul li a {
+    color: #666666;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+#footer-right ul il a.hover {
+    border-bottom: 2px solid #c8c8c8;
+}
+
+.back-top {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+}
+
+/*---------------------------------------
+END FOOTER
+-----------------------------------------*/
