@@ -35,11 +35,19 @@
     <link rel="stylesheet" href="assets/styles/style.css"/>
 
     <!--scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/scripts/slides.min.jquery.js"></script>
 
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <!-- CONTENT -->
     <div id="header-wrap">
         <header>
@@ -112,18 +120,50 @@
             <div id="video">
                 <h4>Quick <strong>Video Tour</strong></h4>
                 <h5>How we Design our works!</h5>
-                <a href="#" class="play"><img src="assets" alt="play" /></a>
+                <a href="#" class="play"><img src="assets/media/images/play.png" alt="play" /></a>
+            </div>
+            <div id="twitter">
+                <h4>Twitter <strong><span class="green">Feed</span></strong></h4>
+                <p class="tweet">Mashable Video: Principal Resigns After Allegedly Posing as a Student on Facebook -<a href="#" class="t-link">http://on.mash.to/IVYWYJ</a><p>
+                <p class="time">9 hours ago</p>
+            </div>
+            <div id="facebook">
+                <h4>Like Us On <strong><span class="green">Facebook</span> </strong></h4>
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
             </div>
         </div><!-- end media -->
     </div><!-- end container -->
-    <div id="widget-wrap">
+    <div id="widget-wrap" class="group">
         <div id="widget">
-            widget content goes here
+           <div id="links">
+               <h4 class="white">Other <strong>Links</strong></h4>
+               <ul>
+                   <li><a href="#">www.example.com</a></li>
+                   <li><a href="#">www.1stwebdesigner.com</a></li>
+                   <li><a href="#">www.labzip.com</a></li>
+                   <li><a href="#">www.samplelink.com</a></li>
+                   <li><a href="#">www.outgoinglink.com</a></li>
+                   <li><a href="#">www.link.com</a></li>
+               </ul>
+           </div><!---end links---->
+            <div id="blog">
+                <h4 class="footer-header white">Latest From the <strong>Blog</strong></h4>
+                <img src="assets/media/images/blog.png" alt="blog" />
+                <p class="title">Maecenas iaculis lorem vel dui vulputate non consequat mi congue.</p>
+                <p class="date">05.30.2012</p>
+                <p><a href="#" class="readmore">read more</a></p>
+            </div><!---- end blog ------>
+            <div id="location">
+                <h4 class="footer-header white">Our <strong>Location</strong></h4>
+                <img src="assets/media/images/map.png" alt="map" />
+                <p class="address">123 unknown street, address
+                    </br> 8600 Philippnes</p>
+            </div><!--- end location --->
         </div><!-- end widget -->
     </div><!--end widget-wrap-->
-    <div id="client-wrap">
+    <div id="client-wrap" class="group">
         <div id="client">
-            client content goes here
+                <img src="assets/media/images/client.png" alt="" />
         </div><!-- end client -->
     </div><!-- end client-wrap -->
     <footer>
@@ -134,6 +174,7 @@
         $(function(){
             $('#slides').slides({
                 preload: true,
+                preloadImage: 'assets/media/images/search.png',
                 generateNextPrev: true
             });
         });

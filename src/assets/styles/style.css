@@ -1,7 +1,10 @@
 body {
+
     background: #fff;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 13px;
+    width: 1400px;
+    margin: 0 auto;
 }
 
 /* ---------------------------------------------------------------
@@ -51,6 +54,7 @@ HEADER STYLES
 #header-wrap {
     border-top: 10px solid #4d9543;
     padding-top: 40px;
+
 }
 
 header {
@@ -356,3 +360,191 @@ SERVICE
 SERVICE END
 -------------------------------------*/
 
+/*---------------------------------------
+MEDIA
+-----------------------------------------*/
+
+#media {
+    margin: 0 auto;
+}
+
+#video {
+    width: 302px;
+    padding-top: 20px;
+    float: left;
+    margin-right: 58px;
+    background: transparent url(../media/images/video-bg.png) no-repeat;
+    height: 225px;
+}
+
+#video h4 {
+    margin: 0;
+}
+
+#video h4, #video h5 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 0 #387031;
+}
+
+#video .play {
+    float: right;
+    margin-top: 5px;
+
+}
+
+#twitter {
+    width: 285px;
+    height: 165px;
+    float: left;
+    margin-right: 30px;
+    background: transparent url(../media/images/twitter-bg.png) no-repeat bottom;
+    padding: 0 0 20px 0;
+}
+
+#twitter p {
+    padding: 0 20px;
+}
+
+#twitter .time {
+    font-size: 11px;
+    font-style: italic;
+    color: #999999;
+    margin-top: 15px;
+}
+
+a.t-link {
+    color: #6767c9; text-decoration: none;
+}
+    a.t-link:hover {
+    text-decoration: underline;
+}
+
+
+#facebook {
+    width: 285px;
+    float: right;
+}
+
+.fb-like {
+    width: 50px;
+}
+
+/* -----------------------------------
+END MEDIA
+---------------------------------------*/
+
+/* ----------------------------------------------
+CLEAR FIX
+--------------------------------------------------*/
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*--------------------------------------------------
+ END FIX
+ ---------------------------------------------------*/
+/*------------------------------------------------------
+WIDGET
+----------------------------------------------------*/
+
+#widget-wrap {
+    padding: 50px 0;
+    background: #333333 url(../media/images/widget-bg.png);
+}
+
+#widget {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h4.footer-header {
+    background: transparent url(../media/images/footer-header.png) no-repeat;
+    line-height: 58px;
+    text-indent: 30px;
+}
+
+
+#links {
+    width: 225px;
+    float: left;
+    margin-right: 75px;
+}
+
+#links ul {
+    list-style-image: url(../media/images/links.png);
+    margin-left: 15px;
+}
+
+#links ul li a {
+    color: #cccccc;
+    font-size: 13px;
+    padding: 8px 0;
+    display: block;
+}
+
+#links ul li a:hover {
+    color: #fff;
+}
+
+#blog {
+    position: relative;
+    width: 290px;
+    float: left;
+    margin-right: 75px;
+}
+
+#blog img {
+    position: absolute;
+    top: 50px;
+    left: -18px;
+
+}
+
+#blog p.title {
+    margin-left: 110px;
+    margin-bottom: 15px;
+}
+
+#blog p.date {
+    margin-left: 110px;
+    color: #cccccc;
+    font-style: italic;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+#blog a.readmore {
+    margin-left: 110px;
+}
+
+#location {
+    position: relative;
+    width: 290px;
+    float: right;
+}
+
+#location img {
+    position: absolute;
+    top: 45px;
+    left: 22px;
+}
+
+#location p.address {
+    margin-top: 115px;
+    border-right: 1px solid #484848;
+    padding-right: 20px;
+    text-align: right;
+    color: #cccccc;
+}
+
+/*-----------------------------------------
+END WIDGET
+-------------------------------------------*/
+/*-----------------------------------------------
+CLIENT
+------------------------------------------------*/
+#client-wrap {
+    padding: 40px 0;
+}
